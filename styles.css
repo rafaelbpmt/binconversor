@@ -8,7 +8,7 @@
   /* Corpo */
   body {
     font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
+    background-color: #1B1C1D;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@
   
   /* Container principal */
   .container {
-    background-color: white;
+    background-color: #282A2C;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -28,13 +28,16 @@
   
   /* Título */
   .container h1 {
-    margin-bottom: 0.3rem;
+    font-size: 2.5rem;
     color: #333;
+    background: linear-gradient(100deg, #5182ED 0%, #D36779 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .container p {
-    margin-bottom: 2rem;
-    color: #333;
+    margin-bottom: 3rem;
+    color: #fff;
   }
   
   /* Formulário */
@@ -54,22 +57,34 @@
   button {
     padding: 0.8rem;
     font-size: 1rem;
-    background-color: #4CAF50;
+    font-weight: 600;
+    background: linear-gradient(135deg, #5182ED 0%, #D36779 100%);
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease; /* <- aqui está o segredo */
+    margin-bottom: 1.5rem;
   }
   
   button:hover {
-    background-color: #45a049;
+    background: linear-gradient(135deg, #2e4a86 0%, #88444f 100%);
   }
+  
+
+  #digite-bin{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+  }
+  
+
   
   /* Resultado */
   .resultado {
     margin-top: 1.5rem;
-    font-size: 1.2rem;
-    color: #222;
+    font-size: 1.4rem;
+    color: #fff;
   }
   
